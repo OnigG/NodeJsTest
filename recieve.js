@@ -3,7 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const app = express();
-const PORT = 3000;
+const PORT = 1000;
 
 // Middleware to parse incoming request bodies as JSON
 app.use(bodyParser.json());
@@ -14,7 +14,6 @@ app.post('/receive', (req, res) => {
   console.log('Received data:', receivedData);
 
   // Perform necessary operations with the received data
-
   res.status(200).send('Data received successfully'); // Respond to the incoming request
 });
 

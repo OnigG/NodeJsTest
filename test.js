@@ -6,8 +6,10 @@ const postData = JSON.stringify({
 });
 
 const options = {
+  //hostname: 'nodetest-husj.onrender.com', // Replace with your server's hostname or domain
   hostname: 'localhost', // Replace with your server's hostname or domain
   port: 3000, // Replace with your server's port
+  //port: 443, // Replace with your server's port
   path: '/receive', // The endpoint on your server
   method: 'POST',
   headers: {
